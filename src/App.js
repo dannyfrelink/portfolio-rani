@@ -22,7 +22,22 @@ function App() {
 			<header>
 				<img src={logo} alt="Logo ContentFlow Media" />
 
-				<button onClick={() => setNavOpen(true)}>
+				<button
+					onClick={() => {
+						if (navOpen) {
+							setCloseNav(true);
+
+							const timeout = setTimeout(() => {
+								setNavOpen(false);
+								setCloseNav(false);
+							}, 300);
+
+							return () => clearTimeout(timeout);
+						} else {
+							setNavOpen(true);
+						}
+					}}
+				>
 					<MenuRoundedIcon fontSize="inherit" />
 				</button>
 
@@ -54,7 +69,28 @@ function App() {
 				)}
 			</header>
 
-			<main></main>
+			<main>
+				<section id="intro">
+					<img src={coverImage} alt="ContentFlow Media" />
+
+					<article>
+						<h1>ContentFlow Media</h1>
+						<p>
+							Hi, ik ben Tannaz en ik ben een gepassioneerde
+							social media manager en eigenaresse van Next Level
+							Socials. Ondernemers en bedrijven helpen groeien op
+							social media is waar ik energie van krijg. Samen
+							werken we aan een strategie die past bij jouw doelen
+							en doelgroep, en creëren we boeiende content die de
+							aandacht trekt.
+						</p>
+
+						<button className="button">
+							Plan een kennismaking
+						</button>
+					</article>
+				</section>
+			</main>
 
 			<footer></footer>
 		</div>

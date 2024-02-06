@@ -6,11 +6,11 @@
 
 body {
 	background-color: var(--nude-light);
-	height: 200vh;
 }
 
 button {
 	border: unset;
+	background-color: unset;
 	height: fit-content;
 	width: fit-content;
 	padding: 0;
@@ -36,6 +36,26 @@ button {
 		top: -30vh;
 		display: none;
 	}
+}
+
+/* General styling */
+h1 {
+	font-size: clamp(30px, 4vw, 45px);
+	margin: 0;
+}
+
+h2 {
+	font-size: clamp(26px, 3.47vw, 38px);
+}
+
+p {
+	font-size: clamp(16px, 2.13vw, 18px);
+}
+
+.button {
+	border: 0.75px solid black;
+	padding: 0.5rem 0.75rem;
+	font-size: clamp(14px, 1.87vw, 16px);
 }
 
 /* Header styling */
@@ -73,12 +93,14 @@ header button {
 header nav {
 	position: absolute;
 	animation: fadeNavOpen 0.3s ease-in forwards;
-	width: 100%;
+	left: -7.5vw;
+	width: 100vw;
 	padding-top: 1.5rem;
 	list-style: none;
 	text-align: center;
 	background-color: var(--nude-light);
 	z-index: -2;
+	box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.2);
 }
 
 header nav.closeNav {
@@ -86,7 +108,7 @@ header nav.closeNav {
 }
 
 header nav li {
-	margin-bottom: 1.5rem;
+	margin-bottom: 2rem;
 }
 
 /* Main content styling */
@@ -96,4 +118,12 @@ main #intro {
 
 main #intro img {
 	width: 100%;
+	max-height: calc(100vh - 5rem);
+}
+
+main #intro article {
+	width: 85%;
+	max-width: 650px;
+	margin: 0 auto;
+	padding: 1.5rem 7.5%;
 }
