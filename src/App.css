@@ -48,7 +48,8 @@ h2 {
 }
 
 h1,
-h2 {
+h2,
+h4 {
 	font-family: "Gowun Batang", serif;
 	font-weight: unset;
 	margin: 0;
@@ -60,7 +61,14 @@ h3 {
 	margin: 0;
 }
 
-p {
+h4 {
+	font-size: clamp(60px, 8vw, 85px);
+	color: var(--secondary);
+	opacity: 35%;
+}
+
+p,
+li {
 	font-size: clamp(16px, 2.13vw, 18px);
 	margin: 0;
 }
@@ -69,6 +77,10 @@ p {
 	border: 0.75px solid black;
 	padding: 0.5rem 0.75rem;
 	font-size: clamp(14px, 1.87vw, 16px);
+}
+
+.relative {
+	position: relative;
 }
 
 /* Header styling */
@@ -80,6 +92,7 @@ header {
 	top: 0;
 	left: 7.5%;
 	width: 85%;
+	z-index: 99;
 }
 
 header::before {
@@ -125,7 +138,7 @@ header nav li {
 }
 
 /* Main styling */
-main > *:nth-child(even):not(:last-child) {
+main > *:nth-child(even) {
 	margin: 4rem 0;
 }
 
@@ -200,4 +213,48 @@ main #pros article p {
 
 main #pros button {
 	margin-left: 7.5%;
+}
+
+/* Main content Services styling */
+main #services {
+	text-align: center;
+	width: 85%;
+	margin: 0 auto;
+}
+
+main #services .show-line {
+	height: 1.5rem;
+	width: 0.75px;
+	background-color: black;
+	margin: 1rem auto 0;
+}
+
+main #services section h3 {
+	position: absolute;
+	bottom: 0.5rem;
+	left: 10%;
+	right: 10%;
+}
+
+main #services section > p {
+	margin: 0.25rem 0 1rem;
+}
+
+main #services section .included {
+	padding-bottom: 0.5rem;
+}
+
+main #services section .included div {
+	display: flex;
+	align-items: center;
+	gap: 4rem;
+	width: fit-content;
+	padding: 0 0.5rem 0.5rem;
+	margin: 0 auto;
+	border-bottom: 0.5px solid black;
+}
+
+main #services section .included ul {
+	text-align: left;
+	list-style-position: inside;
 }
