@@ -11,6 +11,9 @@ import contentIcon from "./assets/icons/content.png";
 import relaxIcon from "./assets/icons/relax.png";
 import growthIcon from "./assets/icons/growth.png";
 import Service from "./components/Service";
+import Pros from "./components/Pros";
+import Carousel from "./components/Carousel";
+import { reviewItems } from "./variables";
 
 function App() {
 	const [navOpen, setNavOpen] = useState(false);
@@ -207,40 +210,21 @@ function App() {
 					</article>
 				</section>
 
-				<Element id="pros" name={navItems[0].toLowerCase()}>
+				<Element
+					id="pros"
+					className="dark-background"
+					name={navItems[0].toLowerCase()}
+				>
 					<h2>Stel je eens voor...</h2>
 
 					<section>
 						{prosItems.map((pro, index) => (
-							<article
-								onClick={() => {
-									if (openPros !== pro.title) {
-										setOpenPros(pro.title);
-									} else {
-										setOpenPros("");
-									}
-								}}
+							<Pros
 								key={index}
-							>
-								<div>
-									<div>
-										<img
-											src={pro.icon.src}
-											alt={pro.icon.alt}
-										/>
-
-										<h3>{pro.title}</h3>
-									</div>
-
-									<h3>
-										{pro.title === openPros ? "-" : "+"}
-									</h3>
-								</div>
-
-								{pro.title === openPros && (
-									<p>{pro.description}</p>
-								)}
-							</article>
+								pro={pro}
+								openPros={openPros}
+								setOpenPros={setOpenPros}
+							/>
 						))}
 					</section>
 
@@ -253,6 +237,16 @@ function App() {
 					{servicesItems.map((service, index) => (
 						<Service service={service} key={index} />
 					))}
+				</Element>
+
+				<Element
+					id="reviews"
+					className="dark-background"
+					name={navItems[2].toLowerCase()}
+				>
+					<h2>Klant reviews</h2>
+
+					<Carousel children={reviewItems} />
 				</Element>
 			</main>
 

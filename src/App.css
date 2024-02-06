@@ -83,6 +83,11 @@ li {
 	position: relative;
 }
 
+.dark-background {
+	background-color: var(--nude-medium);
+	padding: 1.75rem 0;
+}
+
 /* Header styling */
 header {
 	display: flex;
@@ -164,11 +169,6 @@ main #intro article p {
 }
 
 /* Main content Pros styling */
-main #pros {
-	background-color: var(--nude-medium);
-	padding: 1.75rem 0;
-}
-
 main #pros h2 {
 	width: 85%;
 	margin: 0 auto;
@@ -257,4 +257,37 @@ main #services section .included div {
 main #services section .included ul {
 	text-align: left;
 	list-style-position: inside;
+}
+
+/* Main content Reviews styling */
+main #reviews {
+	position: relative;
+	text-align: center;
+}
+
+main #reviews .carousel {
+	width: 62%;
+	margin: 2rem auto 0;
+}
+
+main #reviews .carousel .slick-track {
+	display: flex;
+	align-items: center;
+}
+
+main #reviews .carousel h3 {
+	margin-top: 1.5rem;
+}
+
+main #reviews .carousel svg {
+	position: absolute;
+	top: 50%;
+}
+
+main #reviews .carousel svg:first-of-type {
+	left: 7.5%;
+}
+
+main #reviews .carousel svg:last-of-type {
+	right: 7.5%;
 }
