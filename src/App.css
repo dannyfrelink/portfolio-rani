@@ -1,0 +1,99 @@
+:root {
+	--nude-light: #f1ece4;
+	--nude-medium: #ddcebe;
+	--secondary: #5a7b57;
+}
+
+body {
+	background-color: var(--nude-light);
+	height: 200vh;
+}
+
+button {
+	border: unset;
+	height: fit-content;
+	width: fit-content;
+	padding: 0;
+}
+
+@keyframes fadeNavOpen {
+	0% {
+		top: -30vh;
+		display: none;
+	}
+	100% {
+		top: 5rem;
+		display: block;
+	}
+}
+
+@keyframes fadeNavClose {
+	0% {
+		top: 5rem;
+		display: block;
+	}
+	100% {
+		top: -30vh;
+		display: none;
+	}
+}
+
+/* Header styling */
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	left: 7.5%;
+	width: 85%;
+}
+
+header::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	left: -7.5vw;
+	width: 100vw;
+	border-bottom: 1px solid black;
+	background-color: var(--nude-light);
+	z-index: -1;
+}
+
+header img {
+	height: 3rem;
+	margin: 1rem 0 1rem;
+}
+
+header button {
+	font-size: 1.8rem;
+	height: 28.8px;
+}
+
+header nav {
+	position: absolute;
+	animation: fadeNavOpen 0.3s ease-in forwards;
+	width: 100%;
+	padding-top: 1.5rem;
+	list-style: none;
+	text-align: center;
+	background-color: var(--nude-light);
+	z-index: -2;
+}
+
+header nav.closeNav {
+	animation: fadeNavClose 0.2s ease-in forwards;
+}
+
+header nav li {
+	margin-bottom: 1.5rem;
+}
+
+/* Main content styling */
+main #intro {
+	margin-top: 5rem;
+}
+
+main #intro img {
+	width: 100%;
+}
