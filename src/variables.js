@@ -145,3 +145,30 @@ export const reviewItems = [
 		reviewer: "~ Sandra / NUMBUZIN",
 	},
 ];
+
+export const processItems = [
+	{
+		number: "01",
+		title: "Applicatie",
+		description:
+			"Complete our contact form to kickstart your brand’s journey. Share your goals and needs so we can begin tailoring a solution just for you.",
+	},
+	{
+		number: "02",
+		title: "Belafspraak",
+		description:
+			"In our Discovery Call, we dive deeper into your aspirations, preferences, and unique brand identity. It’s a chance for us to get to know each other and align our visions.",
+	},
+	{
+		number: "03",
+		title: "Voorstel",
+		description:
+			"After a successful Discovery Call, we’ll craft a personalized proposal, offering a range of packages to choose from. Your path to brand elevation starts here.",
+	},
+	{
+		number: "04",
+		title: "Inwerken",
+		description:
+			"Let’s embark on this exciting journey! Once you’ve selected your ideal package, our collaboration officially begins. Together, we’ll elevate your brand to new heights.",
+	},
+];

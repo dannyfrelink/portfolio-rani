@@ -85,7 +85,7 @@ li {
 
 .dark-background {
 	background-color: var(--nude-medium);
-	padding: 2rem 0;
+	padding: 2rem 0 2.5rem;
 }
 
 /* Header styling */
@@ -350,4 +350,34 @@ main #about .about-text > *:not(:last-child) {
 	main #about .about-text {
 		margin-top: calc(94px + 1.75rem);
 	}
+}
+
+/* Main content Process styling */
+main #process h2 {
+	width: 85%;
+	margin: 0 auto 2rem;
+}
+
+main #process div {
+	width: 85%;
+	margin: 0 auto;
+	border-left: 0.75px solid black;
+}
+
+main #process div > *:not(:last-child) {
+	margin-bottom: 4rem;
+}
+
+main #process div section {
+	position: relative;
+}
+
+main #process div section h4 {
+	position: absolute;
+	top: -1.25rem;
+	left: -2rem;
+}
+
+main #process div section article {
+	margin-left: 3rem;
 }

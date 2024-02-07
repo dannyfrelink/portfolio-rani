@@ -9,8 +9,15 @@ import aboutImageSmall from "./assets/images/about-small.JPG";
 import Service from "./components/Service";
 import Pros from "./components/Pros";
 import Carousel from "./components/Carousel";
-import { navItems, prosItems, reviewItems, servicesItems } from "./variables";
+import {
+	navItems,
+	processItems,
+	prosItems,
+	reviewItems,
+	servicesItems,
+} from "./variables";
 import AboutImages from "./components/AboutImages";
+import ProcessItem from "./components/ProcessItem";
 
 function App() {
 	const [navOpen, setNavOpen] = useState(false);
@@ -169,6 +176,25 @@ function App() {
 							audience, and achieve growth.
 						</p>
 					</section>
+				</Element>
+
+				<Element
+					id="process"
+					className="dark-background"
+					name={navItems[4].toLowerCase()}
+				>
+					<h2>Het proces</h2>
+
+					<div>
+						{processItems.map((process, index) => (
+							<ProcessItem
+								key={index}
+								number={process.number}
+								title={process.title}
+								description={process.description}
+							/>
+						))}
+					</div>
 				</Element>
 			</main>
 
