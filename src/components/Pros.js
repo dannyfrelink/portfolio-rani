@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 const Pros = ({ pro, openPros, setOpenPros }) => {
 	return (
 		<article

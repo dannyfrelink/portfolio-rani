@@ -42,7 +42,6 @@ function App() {
 			title: "Optimalisatie online aanwezigheid",
 			description:
 				"Door social media uit te besteden kun je jouw kostbare tijd, aandacht en energie besteden aan je core business.",
-			icon: performanceIcon,
 			icon: {
 				src: performanceIcon,
 				alt: "Optimalisatie Online Aanwezigheid Icoon",
@@ -52,7 +51,6 @@ function App() {
 			title: "Strategie",
 			description:
 				"Door social media uit te besteden kun je jouw kostbare tijd, aandacht en energie besteden aan je core business.",
-			icon: strategyIcon,
 			icon: {
 				src: strategyIcon,
 				alt: "Strategie Icoon",
@@ -80,7 +78,6 @@ function App() {
 			title: "Groei",
 			description:
 				"Door social media uit te besteden kun je jouw kostbare tijd, aandacht en energie besteden aan je core business.",
-			icon: growthIcon,
 			icon: {
 				src: growthIcon,
 				alt: "Groei Icoon",
