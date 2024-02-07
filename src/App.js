@@ -6,6 +6,7 @@ import { Link, Element } from "react-scroll";
 import coverImage from "./assets/images/cover.JPG";
 import aboutImageBig from "./assets/images/about-big.JPG";
 import aboutImageSmall from "./assets/images/about-small.JPG";
+import contactImage from "./assets/images/contact.JPG";
 import Service from "./components/Service";
 import Pros from "./components/Pros";
 import Carousel from "./components/Carousel";
@@ -195,6 +196,70 @@ function App() {
 							/>
 						))}
 					</div>
+				</Element>
+
+				<Element id="contact" name={navItems[5].toLowerCase()}>
+					<img src={contactImage} alt="Contact ContentFlow Media" />
+
+					<section>
+						<article>
+							<h2>Plan een kennismaking</h2>
+							<p>
+								Ik begrijp dat je veel vragen hebt en eerst wil
+								onderzoeken of wij een match zijn. Vul hieronder
+								je gegevens in en ik neem binnen 24 uur contact
+								met je op!
+							</p>
+							<p>
+								Bevind je je nog in de verkennende fase of heb
+								je wellicht nog geen volledig beeld van de
+								opties? Neem dan óók contact met mij op voor een
+								vrijblijvend gesprek.
+							</p>
+							<p>Liever contact via Whatsapp?</p>
+							<p>+31 6 22946356</p>
+						</article>
+
+						<form>
+							<input
+								type="text"
+								name="name"
+								id="name"
+								placeholder="Naam"
+							/>
+
+							<input
+								type="email"
+								name="email"
+								id="email"
+								placeholder="E-mail"
+							/>
+
+							<input
+								type="tel"
+								name="phone"
+								id="phone"
+								placeholder="Telefoon"
+							/>
+
+							<input
+								type="text"
+								name="company"
+								id="company"
+								placeholder="Bedrijf (optioneel)"
+							/>
+
+							<textarea
+								name="message"
+								placeholder="Jouw bericht ..."
+								rows={4}
+							/>
+
+							<button className="button" type="submit">
+								Versturen
+							</button>
+						</form>
+					</section>
 				</Element>
 			</main>
 

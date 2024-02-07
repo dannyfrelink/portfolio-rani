@@ -5,6 +5,11 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 }
 
+input,
+textarea {
+	font-family: inherit;
+}
+
 code {
 	font-family: "Quicksand", Helvetica, sans-serif;
 }
