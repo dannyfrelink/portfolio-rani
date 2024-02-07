@@ -74,6 +74,8 @@ li {
 }
 
 .button {
+	display: block;
+	width: fit-content;
 	border: 0.75px solid black;
 	padding: 0.5rem 0.75rem;
 	font-size: clamp(14px, 1.87vw, 16px);
@@ -211,7 +213,7 @@ main #pros article p {
 	margin-top: 0.5rem;
 }
 
-main #pros button {
+main #pros a {
 	margin-left: 7.5%;
 }
 

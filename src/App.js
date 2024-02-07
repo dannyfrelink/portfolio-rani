@@ -94,9 +94,15 @@ function App() {
 							aandacht trekt.
 						</p>
 
-						<button className="button">
+						<Link
+							className="button"
+							to="contact"
+							smooth={true}
+							offset={-100}
+							duration={500}
+						>
 							Plan een kennismaking
-						</button>
+						</Link>
 					</article>
 				</section>
 
@@ -118,7 +124,15 @@ function App() {
 						))}
 					</section>
 
-					<button className="button">Ontdek het aanbod</button>
+					<Link
+						className="button"
+						to="diensten"
+						smooth={true}
+						offset={-100}
+						duration={500}
+					>
+						Ontdek het aanbod
+					</Link>
 				</Element>
 
 				<Element id="services" name={navItems[1].toLowerCase()}>
