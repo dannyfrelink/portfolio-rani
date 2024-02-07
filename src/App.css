@@ -291,3 +291,63 @@ main #reviews .carousel svg:first-of-type {
 main #reviews .carousel svg:last-of-type {
 	right: 7.5%;
 }
+
+/* Main content About styling */
+main #about {
+	width: 85%;
+	max-width: 455px;
+	margin: 0 auto;
+}
+main #about .about-images {
+	position: relative;
+}
+
+main #about .about-images h4 {
+	position: absolute;
+	left: 0;
+	transform: rotate(90deg);
+	transform-origin: 25% 45%;
+	font-size: clamp(60px, 18.75vw, 100px);
+}
+
+main #about .about-images img {
+	object-fit: cover;
+	object-position: center;
+}
+
+main #about .about-images img:first-of-type {
+	width: 65.63vw;
+	max-width: 350px;
+	height: 65.63vw;
+	max-height: 350px;
+	display: block;
+	margin-left: auto;
+}
+
+main #about .about-images img:last-of-type {
+	width: 35.31vw;
+	max-width: 188px;
+	height: 35.31vw;
+	max-height: 188px;
+	position: absolute;
+	bottom: calc(-35.31vw / 2);
+	left: 0;
+}
+
+main #about .about-text {
+	margin-top: calc((35.31vw / 2) + 1.75rem);
+}
+
+main #about .about-text > *:not(:last-child) {
+	margin-bottom: 0.75rem;
+}
+
+@media (min-width: 535px) {
+	main #about .about-images img:last-of-type {
+		bottom: -94px;
+	}
+
+	main #about .about-text {
+		margin-top: calc(94px + 1.75rem);
+	}
+}

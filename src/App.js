@@ -4,10 +4,13 @@ import logo from "./logo.svg";
 import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
 import { Link, Element } from "react-scroll";
 import coverImage from "./assets/images/cover.JPG";
+import aboutImageBig from "./assets/images/about-big.JPG";
+import aboutImageSmall from "./assets/images/about-small.JPG";
 import Service from "./components/Service";
 import Pros from "./components/Pros";
 import Carousel from "./components/Carousel";
 import { navItems, prosItems, reviewItems, servicesItems } from "./variables";
+import AboutImages from "./components/AboutImages";
 
 function App() {
 	const [navOpen, setNavOpen] = useState(false);
@@ -125,6 +128,47 @@ function App() {
 					<h2>Klant reviews</h2>
 
 					<Carousel children={reviewItems} />
+				</Element>
+
+				<Element
+					id="about"
+					name={navItems[3].toLowerCase().split(" ").join("-")}
+				>
+					<AboutImages
+						title="RANI"
+						imageBig={aboutImageBig}
+						imageSmall={aboutImageSmall}
+					/>
+
+					<section className="about-text">
+						<h2>Leer mij kennen</h2>
+
+						<p>
+							I’m Tessa, the founder behind Yuki Social Studio.
+							With a background in Fashion & Branding at the
+							Amsterdam Fashion Institute, and working as a
+							Content Creator and Content Marketeer, I specialize
+							in crafting engaging visual content that tells
+							compelling brand stories. My keen eye for detail and
+							a deep passion for curating visuals have always been
+							a driving force in my journey.
+						</p>
+
+						<p>
+							Next to that, I’m a devoted animal lover. In 2022,
+							my volunteer work at an animal shelter led me to my
+							pup Yuki, who I adopted. He is a big part of my life
+							and is the inspiration behind the name of this
+							creative studio.
+						</p>
+
+						<p>
+							Yuki Social Studio is the result of these
+							experiences and passions, dedicated to helping
+							brands tell their unique stories, connect with their
+							audience, and achieve growth.
+						</p>
+					</section>
 				</Element>
 			</main>
 
