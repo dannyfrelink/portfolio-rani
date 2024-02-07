@@ -465,3 +465,9 @@ main #contact section form .loader {
 	background: var(--c), var(--c), var(--c);
 	animation: l16-1 1.5s infinite, l16-2 1.5s infinite;
 }
+
+/* Footer styling */
+footer {
+	margin-bottom: 1rem;
+	text-align: center;
+}

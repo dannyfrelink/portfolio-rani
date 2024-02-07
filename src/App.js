@@ -226,7 +226,9 @@ function App() {
 				</Element>
 			</main>
 
-			<footer></footer>
+			<footer>
+				<p>©2024 Rani van Delden</p>
+			</footer>
 		</div>
 	);
 }
