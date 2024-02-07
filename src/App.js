@@ -19,6 +19,7 @@ import {
 } from "./variables";
 import AboutImages from "./components/AboutImages";
 import ProcessItem from "./components/ProcessItem";
+import ContactForm from "./components/ContactForm";
 
 function App() {
 	const [navOpen, setNavOpen] = useState(false);
@@ -220,45 +221,7 @@ function App() {
 							<p>+31 6 22946356</p>
 						</article>
 
-						<form>
-							<input
-								type="text"
-								name="name"
-								id="name"
-								placeholder="Naam"
-							/>
-
-							<input
-								type="email"
-								name="email"
-								id="email"
-								placeholder="E-mail"
-							/>
-
-							<input
-								type="tel"
-								name="phone"
-								id="phone"
-								placeholder="Telefoon"
-							/>
-
-							<input
-								type="text"
-								name="company"
-								id="company"
-								placeholder="Bedrijf (optioneel)"
-							/>
-
-							<textarea
-								name="message"
-								placeholder="Jouw bericht ..."
-								rows={4}
-							/>
-
-							<button className="button" type="submit">
-								Versturen
-							</button>
-						</form>
+						<ContactForm />
 					</section>
 				</Element>
 			</main>

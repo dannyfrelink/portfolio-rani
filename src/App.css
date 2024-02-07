@@ -425,3 +425,7 @@ main #contact section form input::placeholder,
 main #contact section form textarea::placeholder {
 	color: black;
 }
+
+main #contact section form button {
+	margin-top: 0.5rem;
+}
