@@ -1,21 +1,16 @@
-import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
-	const formRef = useRef();
-
 	const handleFormSubmit = (e) => {
 		e.preventDefault();
 
-		console.log(process.env);
-
 		emailjs
 			.sendForm(
-				process.env.CONTACT_SERVICE_ID,
-				process.env.CONTACT_TEMPLATE_ID,
+				process.env.REACT_APP_CONTACT_SERVICE_ID,
+				process.env.REACT_APP_CONTACT_TEMPLATE_ID,
 				e.target,
 				{
-					publicKey: process.env.CONTACT_PUBLIC_KEY,
+					publicKey: process.env.REACT_APP_CONTACT_PUBLIC_KEY,
 				}
 			)
 			.then(
@@ -29,7 +24,7 @@ const ContactForm = () => {
 	};
 
 	return (
-		<form ref={formRef} onSubmit={handleFormSubmit}>
+		<form onSubmit={handleFormSubmit}>
 			<input
 				type="text"
 				name="name"
