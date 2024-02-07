@@ -213,11 +213,11 @@ function App() {
 					</div>
 				</Element>
 
-				<Element id="contact" name={navItems[5].toLowerCase()}>
+				<div id="contact">
 					<img src={contactImage} alt="Contact ContentFlow Media" />
 
 					<section>
-						<article>
+						<Element name={navItems[5].toLowerCase()}>
 							<h2>Plan een kennismaking</h2>
 							<p>
 								Ik begrijp dat je veel vragen hebt en eerst wil
@@ -233,11 +233,11 @@ function App() {
 							</p>
 							<p>Liever contact via Whatsapp?</p>
 							<p>+31 6 22946356</p>
-						</article>
+						</Element>
 
 						<ContactForm />
 					</section>
-				</Element>
+				</div>
 			</main>
 
 			<footer>

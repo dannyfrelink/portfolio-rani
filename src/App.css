@@ -399,12 +399,12 @@ main #contact section {
 	margin-top: 1.5rem;
 }
 
-main #contact section article {
+main #contact section div {
 	text-align: center;
 	margin-bottom: 3rem;
 }
 
-main #contact section article > *:nth-of-type(-n + 2) {
+main #contact section div > *:nth-of-type(-n + 2) {
 	margin-bottom: 0.75rem;
 }
 
