@@ -1,14 +1,19 @@
 import emailjs from "@emailjs/browser";
+import { useRef, useState } from "react";
 
 const ContactForm = () => {
+	const [loader, setLoader] = useState(false);
+	const formRef = useRef(null);
+
 	const handleFormSubmit = (e) => {
 		e.preventDefault();
+		setLoader(true);
 
 		emailjs
 			.sendForm(
 				process.env.REACT_APP_CONTACT_SERVICE_ID,
 				process.env.REACT_APP_CONTACT_TEMPLATE_ID,
-				e.target,
+				formRef.current,
 				{
 					publicKey: process.env.REACT_APP_CONTACT_PUBLIC_KEY,
 				}
@@ -16,15 +21,18 @@ const ContactForm = () => {
 			.then(
 				() => {
 					console.log("SUCCESS!");
+					formRef.current.reset();
+					setLoader(false);
 				},
 				(error) => {
 					console.log("FAILED...", error.text);
+					setLoader(false);
 				}
 			);
 	};
 
 	return (
-		<form onSubmit={handleFormSubmit}>
+		<form ref={formRef} onSubmit={handleFormSubmit}>
 			<input
 				type="text"
 				name="name"
@@ -63,9 +71,13 @@ const ContactForm = () => {
 				required
 			/>
 
-			<button className="button" type="submit">
-				Versturen
-			</button>
+			<div className={loader ? "loader-container" : ""}>
+				<button className="button" type="submit">
+					Versturen
+				</button>
+
+				{loader && <div className="loader"></div>}
+			</div>
 		</form>
 	);
 };
