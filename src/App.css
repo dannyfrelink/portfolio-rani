@@ -78,11 +78,16 @@ img {
 }
 
 .button {
+	cursor: pointer;
 	display: block;
 	width: fit-content;
 	border: 0.75px solid black;
 	padding: 0.5rem 0.75rem;
 	font-size: clamp(14px, 1.87vw, 16px);
+}
+
+.button:hover {
+	background-color: rgba(221, 206, 190, 0.2);
 }
 
 .relative {
@@ -185,45 +190,49 @@ main #pros h2 {
 	margin: 0 auto;
 }
 
-main #pros section {
+main #pros section section {
 	margin: 2rem 0;
 }
 
-main #pros article {
+main #pros section article {
 	padding: 1rem 7.5%;
 }
 
-main #pros article:first-child {
+main #pros section article:first-child {
 	border-top: 0.5px solid black;
 }
 
-main #pros article:nth-child(even) {
+main #pros section article:nth-child(even) {
 	border-top: 0.5px solid black;
 	border-bottom: 0.5px solid black;
 }
 
-main #pros article div {
+main #pros section article div {
 	display: flex;
 }
 
-main #pros article > div {
+main #pros section article > div {
 	justify-content: space-between;
 }
 
-main #pros article div div {
+main #pros section article div div {
 	gap: 0.5rem;
 }
 
-main #pros img {
+main #pros section img {
 	height: clamp(25px, 3.33vw, 30px);
 }
 
-main #pros article p {
+main #pros section article p {
 	margin-top: 0.5rem;
 }
 
-main #pros a {
+main #pros section a {
 	margin-left: 7.5%;
+}
+
+main #pros > img {
+	display: none;
 }
 
 /* Main content Services styling */
@@ -490,6 +499,10 @@ footer {
 
 /* Tablet styling */
 @media (min-width: 750px) {
+	main #pros section article p {
+		margin-top: 0.75rem;
+		width: 75%;
+	}
 }
 
 /* Desktop styling */
@@ -516,12 +529,9 @@ footer {
 
 	header nav {
 		display: flex;
-		justify-content: flex-end;
 		position: unset;
 		animation: unset;
 		padding-top: 0;
-		list-style: none;
-		text-align: center;
 		background-color: unset;
 		z-index: 0;
 		box-shadow: unset;
@@ -557,6 +567,63 @@ footer {
 
 	main #intro article p {
 		margin: 1rem 0 1.75rem;
+	}
+
+	/* Main content Pros styling */
+	main #pros {
+		display: flex;
+		position: relative;
+		width: 90%;
+		max-width: 1150px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	main #pros > section {
+		width: 50%;
+	}
+
+	main #pros section section {
+		margin: 2.25rem 0;
+	}
+
+	main #pros section article {
+		padding: 1.25rem 7.5%;
+		cursor: pointer;
+	}
+
+	main #pros section article:hover,
+	main #pros section a:hover {
+		background-color: rgba(241, 236, 228, 0.2);
+	}
+
+	main #pros section article:first-child {
+		border-top: 0.75px solid black;
+	}
+
+	main #pros section article:nth-child(even) {
+		border-top: 0.75px solid black;
+		border-bottom: 0.75px solid black;
+	}
+
+	main #pros section article div div {
+		gap: 1rem;
+		width: 90%;
+	}
+
+	main #pros section article p {
+		margin-top: 0.75rem;
+		width: 85%;
+	}
+
+	main #pros > img {
+		display: unset;
+		width: 50%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
 	}
 }
 

@@ -4,6 +4,7 @@ import logo from "./logo.svg";
 import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
 import { Link, Element } from "react-scroll";
 import coverImage from "./assets/images/cover.JPG";
+import prosImage from "./assets/images/pros.JPG";
 import aboutImageBig from "./assets/images/about-big.JPG";
 import aboutImageSmall from "./assets/images/about-small.JPG";
 import contactImage from "./assets/images/contact.JPG";
@@ -108,33 +109,33 @@ function App() {
 					</article>
 				</section>
 
-				<Element
-					id="pros"
-					className="dark-background"
-					name={navItems[0].toLowerCase()}
-				>
-					<h2>Stel je eens voor...</h2>
+				<Element id="pros" name={navItems[0].toLowerCase()}>
+					<section className="dark-background">
+						<h2>Stel je eens voor...</h2>
 
-					<section>
-						{prosItems.map((pro, index) => (
-							<Pros
-								key={index}
-								pro={pro}
-								openPros={openPros}
-								setOpenPros={setOpenPros}
-							/>
-						))}
+						<section>
+							{prosItems.map((pro, index) => (
+								<Pros
+									key={index}
+									pro={pro}
+									openPros={openPros}
+									setOpenPros={setOpenPros}
+								/>
+							))}
+						</section>
+
+						<Link
+							className="button"
+							to="diensten"
+							smooth={true}
+							offset={-100}
+							duration={500}
+						>
+							Ontdek het aanbod
+						</Link>
 					</section>
 
-					<Link
-						className="button"
-						to="diensten"
-						smooth={true}
-						offset={-100}
-						duration={500}
-					>
-						Ontdek het aanbod
-					</Link>
+					<img src={prosImage} alt="Voordelen ContentFlow Media" />
 				</Element>
 
 				<Element id="services" name={navItems[1].toLowerCase()}>
