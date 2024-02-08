@@ -77,6 +77,10 @@ img {
 	object-position: center;
 }
 
+a {
+	cursor: pointer;
+}
+
 .button {
 	cursor: pointer;
 	display: block;
@@ -239,6 +243,7 @@ main #pros > img {
 main #services {
 	text-align: center;
 	width: 85%;
+	max-width: 650px;
 	margin: 0 auto;
 }
 
@@ -249,6 +254,10 @@ main #services .show-line {
 	margin: 1rem auto 0;
 }
 
+main #services .show-line-large {
+	display: none;
+}
+
 main #services section h3 {
 	position: absolute;
 	bottom: 0.5rem;
@@ -256,25 +265,32 @@ main #services section h3 {
 	right: 10%;
 }
 
-main #services section > p {
-	margin: 0.25rem 0 1rem;
+main #services section > div > p {
+	margin: 0.25rem 0 1.5rem;
 }
 
 main #services section .included {
+	cursor: pointer;
 	padding-bottom: 0.5rem;
 }
 
 main #services section .included div {
 	display: flex;
 	align-items: center;
-	gap: 4rem;
-	width: fit-content;
+	justify-content: space-between;
+	width: 80%;
+	max-width: 400px;
 	padding: 0 0.5rem 0.5rem;
 	margin: 0 auto;
 	border-bottom: 0.5px solid black;
 }
 
 main #services section .included ul {
+	width: 80%;
+	max-width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0;
 	text-align: left;
 	list-style-position: inside;
 }
@@ -292,6 +308,7 @@ main #reviews {
 
 main #reviews .carousel {
 	width: 62%;
+	max-width: 550px;
 	margin: 2rem auto 0;
 }
 
@@ -307,6 +324,7 @@ main #reviews .carousel h3 {
 main #reviews .carousel svg {
 	position: absolute;
 	top: 50%;
+	font-size: clamp(24px, 3.2vw, 40px);
 }
 
 main #reviews .carousel svg:first-of-type {
@@ -538,6 +556,10 @@ footer {
 		width: fit-content;
 	}
 
+	header nav.closeNav {
+		animation: unset;
+	}
+
 	header nav li {
 		margin-bottom: 0;
 		margin-left: 2rem;
@@ -625,10 +647,123 @@ footer {
 		right: 0;
 		bottom: 0;
 	}
+
+	/* Main content Services styling */
+	main #services {
+		text-align: center;
+		width: 90%;
+		max-width: unset;
+	}
+
+	main #services > div {
+		display: flex;
+	}
+
+	main #services > div > * {
+		width: 33.33%;
+		padding: 0 1.5vw 1.5rem;
+	}
+
+	main #services > div > *:nth-child(odd) {
+		border-left: 1px solid black;
+		border-right: 1px solid black;
+	}
+
+	main #services .show-line {
+		display: none;
+	}
+
+	main #services .show-line-large {
+		display: block;
+		height: 3.5rem;
+		width: 1px;
+		margin: 1.5rem auto 2.5rem;
+		background-color: black;
+	}
+
+	main #services section {
+		display: flex;
+		flex-direction: column;
+		justify-content: initial;
+		flex-basis: auto;
+		flex-grow: 1;
+		flex-shrink: 1;
+		height: 100%;
+	}
+
+	main #services section h3 {
+		bottom: 1rem;
+	}
+
+	main #services section > div:first-child {
+		min-height: 505px;
+	}
+
+	main #services section > div > p {
+		margin: 0.5rem 0 2.5rem;
+	}
+
+	main #services section .included {
+		padding-bottom: 0.5rem;
+	}
+
+	main #services section .included div {
+		display: flex;
+		align-items: center;
+		padding: 0 0.5rem 0.5rem;
+		margin: 0 auto;
+		border-bottom: 0.75px solid black;
+	}
+
+	main #services section .included ul {
+		text-align: left;
+		list-style-position: inside;
+	}
+
+	main #services section .included li {
+		font-size: clamp(16px, 2.13vw, 18px);
+		margin: 0;
+	}
+
+	/* Main content Reviews styling */
+	main #reviews {
+		padding: 3rem 0 3.5rem;
+	}
+
+	main #reviews .carousel {
+		position: relative;
+	}
+
+	main #reviews .carousel svg {
+		top: calc();
+		transform: translateY(-100%);
+	}
+
+	main #reviews .carousel svg:first-of-type {
+		left: -25%;
+	}
+
+	main #reviews .carousel svg:last-of-type {
+		right: -25%;
+	}
 }
 
 @media (min-width: 1250px) {
 	main #intro img {
 		width: 100%;
+	}
+
+	main #services section > div:first-child {
+		min-height: 450px;
+	}
+
+	main #services > div > * {
+		padding: 0 2.9vw 1.5rem;
+	}
+}
+
+@media (min-width: 1400px) {
+	main #services section > div:first-child {
+		min-height: 400px;
 	}
 }

@@ -9,11 +9,13 @@ const Service = ({ service }) => {
 		<div>
 			<div className="show-line"></div>
 			<section>
-				<div className="relative">
-					<h4>{service.number}</h4>
-					<h3>{service.title}</h3>
+				<div>
+					<div className="relative">
+						<h4>{service.number}</h4>
+						<h3>{service.title}</h3>
+					</div>
+					<p>{service.description}</p>
 				</div>
-				<p>{service.description}</p>
 
 				<div
 					className="included"

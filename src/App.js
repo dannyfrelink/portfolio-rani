@@ -141,9 +141,13 @@ function App() {
 				<Element id="services" name={navItems[1].toLowerCase()}>
 					<h2>Diensten</h2>
 
-					{servicesItems.map((service, index) => (
-						<Service service={service} key={index} />
-					))}
+					<div className="show-line-large"></div>
+
+					<div>
+						{servicesItems.map((service, index) => (
+							<Service service={service} key={index} />
+						))}
+					</div>
 				</Element>
 
 				<Element
