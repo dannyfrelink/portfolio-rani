@@ -67,10 +67,14 @@ h4 {
 	opacity: 35%;
 }
 
-p,
-li {
+p {
 	font-size: clamp(16px, 2.13vw, 18px);
 	margin: 0;
+}
+
+img {
+	object-fit: cover;
+	object-position: center;
 }
 
 .button {
@@ -124,8 +128,8 @@ header button {
 }
 
 header nav {
+	display: none;
 	position: absolute;
-	animation: fadeNavOpen 0.3s ease-in forwards;
 	left: -7.5vw;
 	width: 100vw;
 	padding-top: 1.5rem;
@@ -134,6 +138,11 @@ header nav {
 	background-color: var(--nude-light);
 	z-index: -2;
 	box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.2);
+}
+
+header nav.navOpen {
+	display: block;
+	animation: fadeNavOpen 0.3s ease-in forwards;
 }
 
 header nav.closeNav {
@@ -259,6 +268,11 @@ main #services section .included div {
 main #services section .included ul {
 	text-align: left;
 	list-style-position: inside;
+}
+
+main #services section .included li {
+	font-size: clamp(16px, 2.13vw, 18px);
+	margin: 0;
 }
 
 /* Main content Reviews styling */
@@ -472,4 +486,82 @@ main #contact section form .loader {
 footer {
 	margin-bottom: 1rem;
 	text-align: center;
+}
+
+/* Tablet styling */
+@media (min-width: 750px) {
+}
+
+/* Desktop styling */
+@media (min-width: 1000px) {
+	/* Header styling */
+	header {
+		right: 0;
+		align-items: center;
+		width: 90%;
+		left: 5%;
+	}
+
+	header::before {
+		left: -5vw;
+	}
+
+	header img {
+		height: 3.5rem;
+	}
+
+	header button {
+		display: none;
+	}
+
+	header nav {
+		display: flex;
+		justify-content: flex-end;
+		position: unset;
+		animation: unset;
+		padding-top: 0;
+		list-style: none;
+		text-align: center;
+		background-color: unset;
+		z-index: 0;
+		box-shadow: unset;
+		width: fit-content;
+	}
+
+	header nav li {
+		margin-bottom: 0;
+		margin-left: 2rem;
+	}
+
+	/* Main content Intro styling */
+	main #intro {
+		position: relative;
+		overflow: hidden;
+		margin-top: 5.5rem;
+	}
+
+	main #intro img {
+		width: 115%;
+		max-height: calc(100vh - 5.5rem);
+	}
+
+	main #intro article {
+		position: absolute;
+		left: 5%;
+		top: 50%;
+		transform: translateY(-50%);
+		max-width: 475px;
+		background-color: rgba(241, 236, 228, 0.8);
+		padding: 2rem 2.25rem 2.5rem;
+	}
+
+	main #intro article p {
+		margin: 1rem 0 1.75rem;
+	}
+}
+
+@media (min-width: 1250px) {
+	main #intro img {
+		width: 100%;
+	}
 }

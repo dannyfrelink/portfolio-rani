@@ -50,32 +50,34 @@ function App() {
 					<MenuRoundedIcon fontSize="inherit" />
 				</button>
 
-				{navOpen && (
-					<nav className={closeNav ? "closeNav" : ""}>
-						{navItems.map((item, index) => (
-							<li key={index}>
-								<Link
-									onClick={() => {
-										setCloseNav(true);
+				<nav
+					className={`${closeNav && "closeNav"} ${
+						navOpen && "navOpen"
+					}`}
+				>
+					{navItems.map((item, index) => (
+						<li key={index}>
+							<Link
+								onClick={() => {
+									setCloseNav(true);
 
-										const timeout = setTimeout(() => {
-											setNavOpen(false);
-											setCloseNav(false);
-										}, 300);
+									const timeout = setTimeout(() => {
+										setNavOpen(false);
+										setCloseNav(false);
+									}, 300);
 
-										return () => clearTimeout(timeout);
-									}}
-									to={item.toLowerCase().split(" ").join("-")}
-									smooth={true}
-									offset={-100}
-									duration={500}
-								>
-									{item}
-								</Link>
-							</li>
-						))}
-					</nav>
-				)}
+									return () => clearTimeout(timeout);
+								}}
+								to={item.toLowerCase().split(" ").join("-")}
+								smooth={true}
+								offset={-100}
+								duration={500}
+							>
+								{item}
+							</Link>
+						</li>
+					))}
+				</nav>
 			</header>
 
 			<main>
