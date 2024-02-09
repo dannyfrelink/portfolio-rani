@@ -322,6 +322,7 @@ main #reviews .carousel h3 {
 }
 
 main #reviews .carousel svg {
+	cursor: pointer;
 	position: absolute;
 	top: 50%;
 	font-size: clamp(24px, 3.2vw, 40px);
@@ -746,6 +747,48 @@ footer {
 	main #reviews .carousel svg:last-of-type {
 		right: -25%;
 	}
+
+	/* Main content About styling */
+	main #about {
+		display: flex;
+		justify-content: space-between;
+		width: 90%;
+		max-width: 1100px;
+	}
+	main #about .about-images {
+		width: 38%;
+		max-width: 460px;
+		height: fit-content;
+	}
+
+	main #about .about-images h4 {
+		font-size: clamp(60px, 6vw, 85px);
+	}
+
+	main #about .about-images img:first-of-type {
+		width: 27.5vw;
+		max-width: 360px;
+		height: 27.5vw;
+		max-height: 360px;
+	}
+
+	main #about .about-images img:last-of-type {
+		width: 15.75vw;
+		max-width: 190px;
+		height: 15.75vw;
+		max-height: 190px;
+		bottom: -15%;
+	}
+
+	main #about .about-text {
+		width: 58%;
+		max-width: 550px;
+		margin-top: 0;
+	}
+
+	main #about .about-text > *:not(:last-child) {
+		margin-bottom: 1rem;
+	}
 }
 
 @media (min-width: 1250px) {
@@ -759,6 +802,10 @@ footer {
 
 	main #services > div > * {
 		padding: 0 2.9vw 1.5rem;
+	}
+
+	main #about .about-images {
+		width: 41%;
 	}
 }
 
