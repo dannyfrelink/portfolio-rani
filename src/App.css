@@ -8,14 +8,7 @@ body {
 	background-color: var(--nude-light);
 }
 
-button {
-	border: unset;
-	background-color: unset;
-	height: fit-content;
-	width: fit-content;
-	padding: 0;
-}
-
+/* Nav animations */
 @keyframes fadeNavOpen {
 	0% {
 		top: -30vh;
@@ -35,6 +28,29 @@ button {
 	100% {
 		top: -30vh;
 		display: none;
+	}
+}
+
+/* Loader animations */
+@keyframes l16-1 {
+	0%,
+	100% {
+		background-size: 20% 100%;
+	}
+	33%,
+	66% {
+		background-size: 20% 40%;
+	}
+}
+
+@keyframes l16-2 {
+	0%,
+	33% {
+		background-position: 0 0, 50% 100%, 100% 0;
+	}
+	66%,
+	100% {
+		background-position: 0 100%, 50% 0, 100% 100%;
 	}
 }
 
@@ -79,6 +95,14 @@ img {
 
 a {
 	cursor: pointer;
+}
+
+button {
+	border: unset;
+	background-color: unset;
+	height: fit-content;
+	width: fit-content;
+	padding: 0;
 }
 
 .button {
@@ -479,27 +503,6 @@ main #contact section form button {
 	color: black;
 	font-weight: 400;
 	margin-top: 0.5rem;
-}
-
-@keyframes l16-1 {
-	0%,
-	100% {
-		background-size: 20% 100%;
-	}
-	33%,
-	66% {
-		background-size: 20% 40%;
-	}
-}
-@keyframes l16-2 {
-	0%,
-	33% {
-		background-position: 0 0, 50% 100%, 100% 0;
-	}
-	66%,
-	100% {
-		background-position: 0 100%, 50% 0, 100% 100%;
-	}
 }
 
 main #contact section form .loader-container {
