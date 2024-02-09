@@ -100,7 +100,7 @@ a {
 
 .dark-background {
 	background-color: var(--nude-medium);
-	padding: 2rem 0 2.5rem;
+	padding: clamp(2rem, 4.27vw, 3rem) 0 clamp(2.5rem, 5.33vw, 3.5rem);
 }
 
 /* Header styling */
@@ -164,7 +164,7 @@ header nav li {
 
 /* Main styling */
 main > *:nth-child(even) {
-	margin: 4rem 0;
+	margin: clamp(4rem, 8.53vw, 8rem) 0;
 }
 
 /* Main content Intro styling */
@@ -431,7 +431,7 @@ main #process div section article {
 main #contact {
 	width: 85%;
 	max-width: 455px;
-	margin: 0 auto 4rem;
+	margin: 0 auto clamp(4rem, 8.53vw, 8rem);
 }
 
 main #contact img {
@@ -830,7 +830,6 @@ footer {
 		position: relative;
 		width: 90%;
 		max-width: 1150px;
-		margin-bottom: 4rem;
 	}
 
 	main #contact img {
