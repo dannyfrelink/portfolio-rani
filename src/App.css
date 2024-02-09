@@ -399,7 +399,7 @@ main #about .about-text > *:not(:last-child) {
 /* Main content Process styling */
 main #process h2 {
 	width: 85%;
-	margin: 0 auto 2rem;
+	margin: 0 auto clamp(2rem, 4.27vw, 3rem);
 }
 
 main #process div {
@@ -409,7 +409,7 @@ main #process div {
 }
 
 main #process div > *:not(:last-child) {
-	margin-bottom: 4rem;
+	margin-bottom: clamp(4rem, 8.53vw, 6rem);
 }
 
 main #process div section {
@@ -423,7 +423,8 @@ main #process div section h4 {
 }
 
 main #process div section article {
-	margin-left: 3rem;
+	margin-left: clamp(3rem, 6.4vw, 4.5rem);
+	max-width: 650px;
 }
 
 /* Main content Contact styling */
@@ -521,6 +522,11 @@ footer {
 	main #pros section article p {
 		margin-top: 0.75rem;
 		width: 75%;
+	}
+
+	main #process div section h4 {
+		top: -2.67vw;
+		left: -4.27vw;
 	}
 }
 
@@ -788,6 +794,38 @@ footer {
 
 	main #about .about-text > *:not(:last-child) {
 		margin-bottom: 1rem;
+	}
+
+	/* Main content Process styling */
+	main #process h2 {
+		width: 90%;
+		margin-bottom: 5rem;
+	}
+
+	main #process div {
+		display: flex;
+		justify-content: space-between;
+		width: 90%;
+		border-left: unset;
+		border-top: 0.75px solid black;
+	}
+
+	main #process div > * {
+		width: 21.5%;
+	}
+
+	main #process div > *:not(:last-child) {
+		margin-bottom: 0;
+	}
+
+	main #process div section h4 {
+		top: -3.75rem;
+		left: 0;
+	}
+
+	main #process div section article {
+		margin-left: 0;
+		margin-top: 3.5rem;
 	}
 }
 
