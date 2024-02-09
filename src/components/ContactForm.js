@@ -33,43 +33,45 @@ const ContactForm = () => {
 
 	return (
 		<form ref={formRef} onSubmit={handleFormSubmit}>
-			<input
-				type="text"
-				name="name"
-				id="name"
-				placeholder="Naam *"
-				required
-			/>
+			<div>
+				<input
+					type="text"
+					name="name"
+					id="name"
+					placeholder="Naam *"
+					required
+				/>
 
-			<input
-				type="email"
-				name="email"
-				id="email"
-				placeholder="E-mail *"
-				required
-			/>
+				<input
+					type="email"
+					name="email"
+					id="email"
+					placeholder="E-mail *"
+					required
+				/>
 
-			<input
-				type="tel"
-				name="phone"
-				id="phone"
-				placeholder="Telefoon"
-				required
-			/>
+				<input
+					type="tel"
+					name="phone"
+					id="phone"
+					placeholder="Telefoon"
+					required
+				/>
 
-			<input
-				type="text"
-				name="company"
-				id="company"
-				placeholder="Bedrijf"
-			/>
+				<input
+					type="text"
+					name="company"
+					id="company"
+					placeholder="Bedrijf"
+				/>
 
-			<textarea
-				name="message"
-				placeholder="Jouw bericht ... *"
-				rows={4}
-				required
-			/>
+				<textarea
+					name="message"
+					placeholder="Jouw bericht ... *"
+					rows={4}
+					required
+				/>
+			</div>
 
 			<div className={loader ? "loader-container" : ""}>
 				<button className="button" type="submit">
