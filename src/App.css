@@ -134,6 +134,7 @@ header img {
 header button {
 	font-size: 1.8rem;
 	height: 28.8px;
+	color: black;
 }
 
 header nav {
@@ -471,6 +472,8 @@ main #contact section form textarea::placeholder {
 }
 
 main #contact section form button {
+	color: black;
+	font-weight: 400;
 	margin-top: 0.5rem;
 }
 
