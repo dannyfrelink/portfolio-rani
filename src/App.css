@@ -533,7 +533,6 @@ footer {
 @media (min-width: 1000px) {
 	/* Header styling */
 	header {
-		right: 0;
 		align-items: center;
 		width: 90%;
 		left: 5%;
@@ -656,7 +655,7 @@ footer {
 	main #services {
 		text-align: center;
 		width: 90%;
-		max-width: unset;
+		max-width: 1600px;
 	}
 
 	main #services > div {
@@ -756,7 +755,7 @@ footer {
 		display: flex;
 		justify-content: space-between;
 		width: 90%;
-		max-width: 1100px;
+		max-width: 1150px;
 	}
 	main #about .about-images {
 		width: 38%;
@@ -796,6 +795,7 @@ footer {
 	/* Main content Process styling */
 	main #process h2 {
 		width: 90%;
+		text-align: center;
 		margin-bottom: 5rem;
 	}
 
@@ -803,6 +803,7 @@ footer {
 		display: flex;
 		justify-content: space-between;
 		width: 90%;
+		max-width: 1600px;
 		border-left: unset;
 		border-top: 0.75px solid black;
 	}
