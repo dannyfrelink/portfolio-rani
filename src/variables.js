@@ -18,16 +18,16 @@ export const prosItems = [
 	{
 		title: "Tijdsbesparing",
 		description:
-			"Door social media uit te besteden kun je jouw kostbare tijd, aandacht en energie besteden aan je core business.",
+			"Door het beheer van je social media aan ons over te laten, kun je kostbare tijd, aandacht en energie steken in je kerntaken.",
 		icon: {
 			src: timeIcon,
 			alt: "Tijdsbesparing Icoon",
 		},
 	},
 	{
-		title: "Optimalisatie online aanwezigheid",
+		title: "Optimale Online Aanwezigheid",
 		description:
-			"Door social media uit te besteden kun je jouw kostbare tijd, aandacht en energie besteden aan je core business.",
+			"Wij zorgen voor een sterkere online aanwezigheid door strategische inzet en content die jouw merk versterkt.",
 		icon: {
 			src: performanceIcon,
 			alt: "Optimalisatie Online Aanwezigheid Icoon",
@@ -36,25 +36,16 @@ export const prosItems = [
 	{
 		title: "Strategie",
 		description:
-			"Door social media uit te besteden kun je jouw kostbare tijd, aandacht en energie besteden aan je core business.",
+			"Wij ontwikkelen samen een maatwerk social media strategie die past bij jouw bedrijf en doelstellingen.",
 		icon: {
 			src: strategyIcon,
 			alt: "Strategie Icoon",
 		},
 	},
 	{
-		title: "Content",
-		description:
-			"Door social media uit te besteden kun je jouw kostbare tijd, aandacht en energie besteden aan je core business.",
-		icon: {
-			src: contentIcon,
-			alt: "Content Icoon",
-		},
-	},
-	{
 		title: "Gemoedsrust",
 		description:
-			"Door social media uit te besteden kun je jouw kostbare tijd, aandacht en energie besteden aan je core business.",
+			"Vertrouw op onze deskundigheid en ervaar de rust dat jouw sociale media in goede handen is.",
 		icon: {
 			src: relaxIcon,
 			alt: "Gemoedsrust Icoon",
@@ -63,7 +54,7 @@ export const prosItems = [
 	{
 		title: "Groei",
 		description:
-			"Door social media uit te besteden kun je jouw kostbare tijd, aandacht en energie besteden aan je core business.",
+			"Zet de stap naar meer bereik en betrokkenheid, wat leidt tot groei van je bedrijf.",
 		icon: {
 			src: growthIcon,
 			alt: "Groei Icoon",
@@ -76,46 +67,38 @@ export const servicesItems = [
 		number: "01",
 		title: "Social Media Beheer",
 		description:
-			"Social Media Management is the day-to-day curation of your social platforms, where we skillfully bring your unique strategy and aesthetic to life. This way, you can focus on other priorities while we handle your social media.",
+			"Social Media Beheer is bij ContentFlow Media de totale verzorging van jouw sociale platformen. We brengen jouw persoonlijke strategie en stijl tot leven met als doel om jou de ruimte te geven voor wat echt telt: jouw bedrijf. Met onze hulp kun je je aandacht richten op je core business, terwijl wij de touwtjes van jouw social media in handen nemen.",
 		included: [
-			"Concept",
-			"Script Writing",
-			"Video / Photography",
-			"Editing",
-			"1 Free Revision",
-			"30 Days Paid Advertising",
-			"Google Drive or WeTransfer access to all content",
+			"Een strategisch overleg om jouw visie helder te krijgen",
+			"Het creëren van pakkende content die jouw publiek aanspreekt",
+			"Het volledige beheer van een afgesproken aantal platformen",
+			"Het finetunen en optimaliseren van je social media accounts",
+			"Een uitgewerkte contentkalender voor gestructureerde publicaties",
+			"Directe communicatie en overleg via Whatsapp",
+			"Maandelijkse analyses en strategiegesprekken om de voortgang te bespreken",
 		],
 	},
 	{
 		number: "02",
 		title: "Branding",
 		description:
-			"If you’re looking for User Generated Content to share on your social platforms, then this is for you. Whether you need organic or paid ad videos for your social media, we’ve got you covered. We provide both one-off and monthly retainer packages, tailored to your business’s specific requirements.",
+			"In het hart van elke succesvolle onderneming staat een sterk merk. Bij ContentFlow Media specialiseren we ons in het aanscherpen en optimaliseren van jouw merkidentiteit. Van de kernwaarden tot de visuele uitstraling, we zorgen ervoor dat jouw merk onderscheidend en herkenbaar is in de markt. Dit proces omvat alles van het verfijnen van je biografie tot het waarborgen van een consequente merkervaring over alle kanalen.",
 		included: [
-			"Concept",
-			"Script Writing",
-			"Video / Photography",
-			"Editing",
-			"1 Free Revision",
-			"30 Days Paid Advertising",
-			"Google Drive or WeTransfer access to all content",
+			"Analyse en verfijning van de merkstrategie",
+			"Ontwikkeling van een unieke merkpersoonlijkheid",
+			"Ontwerp van een consistent visueel merkpalet (logo, kleurenschema, typografie)",
+			"Advies over merkpositionering en communicatiestrategie",
+			"Ontwikkeling van merkrichtlijnen voor intern en extern gebruik",
+			"Creatie van branded content voor alle platformen",
+			"Merkmonitoring en advies voor continue verbetering",
 		],
 	},
 	{
 		number: "03",
 		title: "Content Creatie",
 		description:
-			"Our Content Creation service is the ideal complement to our Social Media Management packages or can be a standalone solution for those seeking content for one-time projects. It may involve receiving products for us to create content with, or we can come to your location, depending on your unique needs. We’re always ready to explore what we can do to meet your specific content requirements.",
-		included: [
-			"Concept",
-			"Script Writing",
-			"Video / Photography",
-			"Editing",
-			"1 Free Revision",
-			"30 Days Paid Advertising",
-			"Google Drive or WeTransfer access to all content",
-		],
+			"Onze Content Creatie service is de perfecte aanvulling op ons Social Media Management aanbod. Of je nu op zoek bent naar op maat gemaakte contentpakketten voor een consistente merkbeleving, of ondersteuning nodig hebt bij een eenmalig project, wij staan voor je klaar. Dit kan gaan om het ontvangen van producten om content mee te creëren, of wij komen langs om op maat gemaakte content te ontwikkelen die écht resoneert met jouw doelgroep. We staan altijd klaar om te bespreken hoe we kunnen voldoen aan jouw specifieke contentbehoeften.",
+		included: ["", "", "", "", "", "", ""],
 	},
 ];
 

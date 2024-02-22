@@ -88,13 +88,19 @@ function App() {
 					<article>
 						<h1>ContentFlow Media</h1>
 						<p>
-							Hi, ik ben Tannaz en ik ben een gepassioneerde
-							social media manager en eigenaresse van Next Level
-							Socials. Ondernemers en bedrijven helpen groeien op
-							social media is waar ik energie van krijg. Samen
-							werken we aan een strategie die past bij jouw doelen
-							en doelgroep, en creëren we boeiende content die de
-							aandacht trekt.
+							Welkom! Ik ben Rani, een gepassioneerde social media
+							manager en content creator. Als oprichtster van
+							ContentFlow Media zet ik mijn expertise in om
+							ondernemers (en bedrijven) zoals jij te ondersteunen
+							bij hun groei op social media! Samen bouwen we aan
+							een strategie die aansluit op jouw doelen en
+							doelgroep en creëren we content die de aandacht
+							grijpt en vasthoudt. Social media kan als de
+							perfecte marketing tool worden ingezet om de doelen
+							van jouw bedrijf of onderneming te behalen.
+							ContentFlow Media zal jou helpen de volledige kracht
+							van sociale media te benutten, zodat jouw bedrijf
+							online op de kaart wordt gezet.
 						</p>
 
 						<Link
@@ -174,29 +180,23 @@ function App() {
 						<h2>Leer mij kennen</h2>
 
 						<p>
-							I’m Tessa, the founder behind Yuki Social Studio.
-							With a background in Fashion & Branding at the
-							Amsterdam Fashion Institute, and working as a
-							Content Creator and Content Marketeer, I specialize
-							in crafting engaging visual content that tells
-							compelling brand stories. My keen eye for detail and
-							a deep passion for curating visuals have always been
-							a driving force in my journey.
+							Met een ruime ervaring in social media beheer en
+							content creatie, ben ik, Rani van Delden,
+							gespecialiseerd in het creëren van visuele content
+							die merkverhalen op een boeiende manier vertelt.
+							Mijn oog voor detail en mijn passie voor het creëren
+							van visuals zijn altijd de drijvende kracht geweest
+							in mijn reis.
 						</p>
 
 						<p>
-							Next to that, I’m a devoted animal lover. In 2022,
-							my volunteer work at an animal shelter led me to my
-							pup Yuki, who I adopted. He is a big part of my life
-							and is the inspiration behind the name of this
-							creative studio.
-						</p>
-
-						<p>
-							Yuki Social Studio is the result of these
-							experiences and passions, dedicated to helping
-							brands tell their unique stories, connect with their
-							audience, and achieve growth.
+							Daarnaast ben ik een toegewijde moeder en een
+							gepassioneerde liefhebber van sociale media, waarbij
+							ik mijn kennis, die ik heb opgedaan tijdens een HBO
+							LOI-cursus in sociale media én ervaring als
+							secretaresse, combineer om merken te helpen hun
+							unieke verhalen te delen, verbinding te maken met
+							hun publiek en groei te realiseren.
 						</p>
 					</section>
 				</Element>
@@ -225,21 +225,21 @@ function App() {
 
 					<section>
 						<Element name={navItems[5].toLowerCase()}>
-							<h2>Plan een kennismaking</h2>
+							<h2>Plan een kennismakingsgesprek</h2>
 							<p>
-								Ik begrijp dat je veel vragen hebt en eerst wil
-								onderzoeken of wij een match zijn. Vul hieronder
-								je gegevens in en ik neem binnen 24 uur contact
-								met je op!
+								Logisch dat je nog een aantal vragen hebt en
+								wilt onderzoeken of we een goede match zijn. Vul
+								daarom hieronder je gegevens in en ik zal binnen
+								48 uur contact met je op nemen!
 							</p>
 							<p>
-								Bevind je je nog in de verkennende fase of heb
-								je wellicht nog geen volledig beeld van de
-								opties? Neem dan óók contact met mij op voor een
-								vrijblijvend gesprek.
+								Ben je nog zoekende of heb je mogelijk nog geen
+								volledig beeld van de opties? Neem dan ook
+								contact met mij op voor een vrijblijvend
+								gesprek.
 							</p>
-							<p>Liever contact via Whatsapp?</p>
-							<p>+31 6 22946356</p>
+							<p>Voor direct contact via Whatsapp:</p>
+							<p>+31 6 12032808</p>
 						</Element>
 
 						<ContactForm />

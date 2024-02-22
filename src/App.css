@@ -238,6 +238,10 @@ main #pros section article:nth-child(even) {
 	border-bottom: 0.5px solid black;
 }
 
+main #pros section article:last-child {
+	border-bottom: 0.5px solid black;
+}
+
 main #pros section article div {
 	display: flex;
 }
@@ -709,7 +713,7 @@ footer {
 	}
 
 	main #services section > div:first-child {
-		min-height: 505px;
+		min-height: 615px;
 	}
 
 	main #services section > div > p {
@@ -883,7 +887,7 @@ footer {
 	}
 
 	main #services section > div:first-child {
-		min-height: 450px;
+		min-height: 576px;
 	}
 
 	main #services > div > * {
@@ -897,6 +901,12 @@ footer {
 
 @media (min-width: 1400px) {
 	main #services section > div:first-child {
-		min-height: 400px;
+		min-height: 531px;
+	}
+}
+
+@media (min-width: 1600px) {
+	main #services section > div:first-child {
+		min-height: 464px;
 	}
 }
