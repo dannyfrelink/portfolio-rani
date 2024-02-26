@@ -1,7 +1,6 @@
 import timeIcon from "./assets/icons/time.png";
 import performanceIcon from "./assets/icons/performance.png";
 import strategyIcon from "./assets/icons/strategy.png";
-import contentIcon from "./assets/icons/content.png";
 import relaxIcon from "./assets/icons/relax.png";
 import growthIcon from "./assets/icons/growth.png";
 
@@ -30,7 +29,7 @@ export const prosItems = [
 			"Wij zorgen voor een sterkere online aanwezigheid door strategische inzet en content die jouw merk versterkt.",
 		icon: {
 			src: performanceIcon,
-			alt: "Optimalisatie Online Aanwezigheid Icoon",
+			alt: "Optimale Online Aanwezigheid Icoon",
 		},
 	},
 	{
@@ -98,33 +97,31 @@ export const servicesItems = [
 		title: "Content Creatie",
 		description:
 			"Onze Content Creatie service is de perfecte aanvulling op ons Social Media Management aanbod. Of je nu op zoek bent naar op maat gemaakte contentpakketten voor een consistente merkbeleving, of ondersteuning nodig hebt bij een eenmalig project, wij staan voor je klaar. Dit kan gaan om het ontvangen van producten om content mee te creëren, of wij komen langs om op maat gemaakte content te ontwikkelen die écht resoneert met jouw doelgroep. We staan altijd klaar om te bespreken hoe we kunnen voldoen aan jouw specifieke contentbehoeften.",
-		included: ["", "", "", "", "", "", ""],
+		included: [
+			"Creatie van hoogwaardige content op locatie, afgestemd op jouw specifieke behoeften en doelstellingen",
+			"Ontwikkeling van op maat gemaakte contentpakketten voor een consistente merkbeleving",
+			"Conceptontwikkeling en storyboarding voor creatieve en effectieve content",
+			"Professionele fotografie en videografie om jouw merk tot leven te brengen",
+			"Flexibiliteit om te voldoen aan veranderende behoeften en omstandigheden, met de mogelijkheid tot aanpassingen en revisies om ervoor te zorgen dat de content perfect aansluit bij jouw visie en doelen",
+		],
 	},
 ];
 
 export const reviewItems = [
 	{
-		review: "It was an absolute pleasure working with Tessa on our UGC project. She captured what we had in mind for the content perfectly, and the results in the video and images were flawless! She has a real talent for showcasing products in their best light and the quality was so high. It ended up being one of our best performing videos on social media with high engagement. We can’t wait to work with her again for future projects!",
+		review: "Heel blij met de video's van Rani! Ze heeft goed gekeken naar de unieke kenmerken van het merk en daarop ingespeeld in de video's. Ook leverde ze meer dan beloofd, wat altijd een mooie plus is.",
 		reviewer: "~ Sophie, IDUNMINERALS",
 	},
 	{
-		review: "It was a pleasure working with Tessa! She was very professional and delivered exactly what we were looking for.",
+		review: "Rani heeft ons geholpen met onze eerste UGC video en we zijn erg te spreken over de samenwerking. Je kunt goed overleggen met Rani en ze komt haar afspraken goed na. Zo stuurde ze een filmpje op en wilde we het een en ander aangepast hebben en werd dit snel naar tevredenheid gedaan. Al met al fijne samenwerking! Bedankt namens Team Somora.",
 		reviewer: "~ Sandra / NUMBUZIN",
 	},
 	{
-		review: "It was an absolute pleasure working with Tessa on our UGC project. She captured what we had in mind for the content perfectly, and the results in the video and images were flawless! She has a real talent for showcasing products in their best light and the quality was so high. It ended up being one of our best performing videos on social media with high engagement. We can’t wait to work with her again for future projects!",
+		review: "Super tevreden over de video die Rani voor mijn bedrijf heeft gemaakt! Communicatie ging erg soepel en Rani heeft de content echt onwijs snel ingeleverd. Mijn complimenten! Zeker een aanrader!",
 		reviewer: "~ Sophie, IDUNMINERALS",
 	},
 	{
-		review: "It was a pleasure working with Tessa! She was very professional and delivered exactly what we were looking for.",
-		reviewer: "~ Sandra / NUMBUZIN",
-	},
-	{
-		review: "It was an absolute pleasure working with Tessa on our UGC project. She captured what we had in mind for the content perfectly, and the results in the video and images were flawless! She has a real talent for showcasing products in their best light and the quality was so high. It ended up being one of our best performing videos on social media with high engagement. We can’t wait to work with her again for future projects!",
-		reviewer: "~ Sophie, IDUNMINERALS",
-	},
-	{
-		review: "It was a pleasure working with Tessa! She was very professional and delivered exactly what we were looking for.",
+		review: "We zijn heel blij met de samenwerking met Rani! Ze komt natuurlijk over en is goed in het maken van 1 geheeld. Ze luistert goed naar je wensen en staat altijd open voor aanpassingen.",
 		reviewer: "~ Sandra / NUMBUZIN",
 	},
 ];
@@ -132,26 +129,26 @@ export const reviewItems = [
 export const processItems = [
 	{
 		number: "01",
-		title: "Applicatie",
+		title: "Ontdekkingsgesprek",
 		description:
-			"Complete our contact form to kickstart your brand’s journey. Share your goals and needs so we can begin tailoring a solution just for you.",
+			"De eerste fase is elkaar leren kennen, het is namelijk belangrijk dat wij beiden een klik voelen. Vragen en antwoorden staan hierbij centraal. Zodra we alle onderwerpen hebben behandeld, begint het echte werk.",
 	},
 	{
 		number: "02",
-		title: "Belafspraak",
+		title: "Eerste ontmoeting",
 		description:
-			"In our Discovery Call, we dive deeper into your aspirations, preferences, and unique brand identity. It’s a chance for us to get to know each other and align our visions.",
+			"Het eerste punt op onze lijst is het opstellen van een social media strategie en contentplan dat aansluit bij jullie meest ambitieuze doelen. Zodra het gereed is, plannen we een gesprek met jou in om het in detail te bespreken.",
 	},
 	{
 		number: "03",
-		title: "Voorstel",
+		title: "Project Kickoff",
 		description:
-			"After a successful Discovery Call, we’ll craft a personalized proposal, offering a range of packages to choose from. Your path to brand elevation starts here.",
+			"Je was enthousiast over alles en nu kunnen we beginnen met het posten, waardoor jouw merk wordt getransformeerd en je verbluffende resultaten kunt waarnemen.",
 	},
 	{
 		number: "04",
-		title: "Inwerken",
+		title: "Maandelijkse meetings",
 		description:
-			"Let’s embark on this exciting journey! Once you’ve selected your ideal package, our collaboration officially begins. Together, we’ll elevate your brand to new heights.",
+			"Onze samenwerking is een continu proces, dus we willen ervoor zorgen dat we voortduren evolueren en onszelf verbeteren. We plannen maandelijkse bijpraatsessies om jouw voortgang, eventuele mijlpalen die we hebben bereikt en de volgende stappen in onze samenwerking te bespreken.",
 	},
 ];
