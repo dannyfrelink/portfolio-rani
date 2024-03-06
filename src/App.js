@@ -86,7 +86,10 @@ function App() {
 					<img src={coverImage} alt="ContentFlow Media" />
 
 					<article>
-						<h1>ContentFlow Media</h1>
+						<h1>
+							ContentFlow Media, jouw partner in social media
+							succes!
+						</h1>
 						<p>
 							Welkom! Ik ben Rani, een gepassioneerde social media
 							manager en content creator. Als oprichtster van
